@@ -62,6 +62,8 @@
         </v-col>
 
       </v-row>
+
+      <global-nav-drawer />
     </div>
 
   </v-container>
@@ -69,4 +71,5 @@
 
 <script setup lang="ts">
   import { TOOL_LIST } from '@/data/toolList.ts'
+  import GlobalNavDrawer from '../GlobalNavDrawer.vue'
 </script>
