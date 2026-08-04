@@ -6,7 +6,6 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/niltheria_trpg_tools/',
   plugins: [
     Vue({
       template: { transformAssetUrls },
@@ -48,4 +47,8 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    outDir: 'dist',
+  },
+  base: '/niltheria_trpg_tools/',
 })
